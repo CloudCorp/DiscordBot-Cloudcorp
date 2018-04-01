@@ -14,7 +14,6 @@ for (const file of commandFiles) {
 
 client.on('ready', () => {
 	console.log('Ready!');
-	client.user.setGame("SkyBot!");
 });
 
 client.on('message', message => {
@@ -34,4 +33,4 @@ client.on('message', message => {
 	}
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(token);
